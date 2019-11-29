@@ -3,23 +3,24 @@ package factorial;
 public class Factorial {
 
     public static void main(String[] args) {
+        //Numero que vamos a multiplicar
+        int numMultiplicar;
+        //Variable para almacer y mostrar resultado
+        int totalMultiplicacion;
 
-        int j;
-        int f;
-
-        j = 8;
-
-        int i;
-        if (j == 0) {
-            f = 1;
+        numMultiplicar = 8;
+        // Contador de bucle for
+        int contador;
+        if (numMultiplicar == 0) {
+            totalMultiplicacion = 1;
         } else {
-            f = 1;
-            for (i = j; i >= 1; i--) {
-                f = f * i;
+            totalMultiplicacion = 1;
+            for (contador = numMultiplicar; contador >= 1; contador--) {
+                totalMultiplicacion = totalMultiplicacion * contador;
             }
         }
 
-        System.out.println(f);
+        System.out.println(totalMultiplicacion);
 
     }
 
